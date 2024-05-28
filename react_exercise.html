@@ -30,11 +30,14 @@
       function Main(props) {
         return (
           <section>
-            {props.dishes.map(dish => (
-              <li key={dish.id}>
-                {dish.title}
-              </li>
-            ))}
+            <img src="https://images.pexels.com/photos/825661/pexels-photo-825661.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" height={200} alt="Declicious Pizza" />
+            <ul>
+              {props.dishes.map(dish => (
+                <li key={dish.id}>
+                  {dish.title}
+                </li>
+              ))}
+            </ul>
           </section>
         )
       }
